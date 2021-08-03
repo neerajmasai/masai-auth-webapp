@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome to Masai</title>
+</head>
+<body>
+    <div class="navbar">
+        <img id="logo" src="logo.svg" alt="" onclick="home()">
+        <div class="right">
+            <a href="#" class="active-item"><h3>Sign Up</h3></a>
+            <a href="login.html"><h3>Login</h3></a>
+        </div>
+    </div>
+    <div class="register-form">
+        <h2>Create An Account With Us!</h2>
+        <br><br>
+        <form id="formRegister" onsubmit="register(event)">
+            <div class="form-fields">
+                <div class="name-box">
+                    <label for="name">Full name*</label>
+                    <input id="name"type="text" required>
+                </div>
+                <div class="email-box">
+                    <label for="email">Email*</label>
+                    <input id="email" type="email" required>
+                </div>
+            </div>
+            <div class="form-fields">
+                <div class="username-box">
+                    <label for="username">Username*</label>
+                    <input id="username" type="text" required>
+                </div>
+                <div class="phone-box">
+                    <label for="phone">Phone*</label>
+                    <input id="phone" type="text" required>
+                </div>
+            </div>
+            <div class="form-fields">
+                <div class="password-box">
+                    <label for="password">Password*</label>
+                    <input id="password" type="password" required>
+                </div>
+                <div class="password-confirm-box">
+                    <label for="password">Verify*</label>
+                    <input id="passwordConfirm" type="password" required>
+                </div>                
+            </div>
+            <div class="submit-box">
+                <input id="submitBtn" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
